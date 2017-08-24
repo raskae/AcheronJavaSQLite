@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.raskae.examples.acheronjavasqlite.features.login.LoginActivity">
+
+    <TextView
+        android:id="@+id/labelAppName"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp" />
+
+    <EditText
+        android:id="@+id/inputUsername"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/username_label"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/inputPassword"
+        android:layout_alignLeft="@+id/inputPassword"
+        android:layout_alignStart="@+id/inputPassword" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/password_label"
+        android:inputType="textPassword"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/logMeInBtn"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="421dp"
+        android:layout_alignBottom="@+id/registerMeBtn"
+        android:layout_alignLeft="@+id/inputPassword"
+        android:layout_alignStart="@+id/inputPassword"
+        android:onClick="logMeIn"/>
+
+    <Button
+        android:id="@+id/registerMeBtn"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register_btn"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/inputUsername"
+        android:layout_alignEnd="@+id/inputUsername"
+        android:onClick="registerMe"/>
+
+</RelativeLayout>
