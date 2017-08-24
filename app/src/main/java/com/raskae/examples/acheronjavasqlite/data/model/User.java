@@ -41,6 +41,13 @@ public class User implements Parcelable {
         this.password = password;
     }
 
+    public User(long id, String username, String password, String email) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+    }
+
     public User(long id, String username, String password, String email, List<User> overseerUsers) {
         this.id = id;
         this.username = username;

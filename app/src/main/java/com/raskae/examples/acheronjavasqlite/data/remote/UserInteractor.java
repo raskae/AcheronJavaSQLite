@@ -93,4 +93,8 @@ public class UserInteractor {
 
         return newRowId != 0;
     }
+
+    public void deleteAllUsers() {
+        dbHelper.getWritableDatabase().execSQL("delete from " + UserContract.UserEntry.TABLE_NAME);
+    }
 }
